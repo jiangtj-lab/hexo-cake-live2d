@@ -1,5 +1,5 @@
 {
-  "name": "hexo-helper-live2d",
+  "name": "hexo-cake-live2d",
   "version": "3.1.1",
   "description": "Add the Sseexxyyy live2d to your hexo!",
   "main": "./index.js",
@@ -37,28 +37,26 @@
   "author": "EYHN <cneyhn@gmail.com>",
   "contributors": [
     "xiazeyu <xiazeyu_2011@126.com>",
-    "EYHN <cneyhn@gmail.com>"
+    "EYHN <cneyhn@gmail.com>",
+    "Mr.J <i@dnocm.com>"
   ],
   "maintainers": [
     "xiazeyu <xiazeyu_2011@126.com>",
-    "EYHN <cneyhn@gmail.com>"
+    "EYHN <cneyhn@gmail.com>",
+    "Mr.J <i@dnocm.com>"
   ],
   "license": "GPL-2.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/EYHN/hexo-helper-live2d.git"
+    "url": "git://github.com/jiangtj-lab/hexo-cake-live2d.git"
   },
   "bugs": {
-    "url": "https://github.com/EYHN/hexo-helper-live2d/issues"
+    "url": "https://github.com/jiangtj-lab/hexo-cake-live2d/issues"
   },
-  "homepage": "https://github.com/EYHN/hexo-helper-live2d#readme",
+  "homepage": "https://github.com/jiangtj-lab/hexo-cake-live2d#readme",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/hexo-helper-live2d"
   }
 }

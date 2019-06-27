@@ -226,18 +226,11 @@ if (config.enable) {
    */
   if (!config.tagMode) {
 
-    hexo.extend.filter.register('after_render:html', (htmlContent) => {
+    hexo.extend.filter.register('theme_inject', (injects) => {
 
       const scriptToInject = `L2Dwidget.init(${JSON.stringify(config)});`;
       const contentToInject = `<script src="${scriptUrlToInject}"></script><script>${scriptToInject}</script>`;
-      let newHtmlContent = htmlContent;
-      if ((/([\n\r\s\t]*<\/body>)/i).test(htmlContent)) {
-
-        const lastIndex = htmlContent.lastIndexOf('</body>');
-        newHtmlContent = `${htmlContent.substring(0, lastIndex)}${contentToInject}${htmlContent.substring(lastIndex, htmlContent.length)}`; // eslint-disable-line no-magic-numbers
-
-      }
-      return newHtmlContent;
+      injects.bodyEnd.raw('live2d', contentToInject, {}, {cache: true})
 
     });
 
